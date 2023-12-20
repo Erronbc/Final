@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+// Дефолтные цветы и фонтсайзы
+:root{
+    --primaryColor: hs1(233, 52%, 19%);
+    --secColor: hs1(233, 16%, 44%);
+    --hoverColor: orange;
+    --blackColor: #707070;
+    --greyText: hs1(0, 0%, 75%);
+    --bgColor: hs1(0, 0%, 100%);
+    --shadowColor: hsla(0, 0%, 0%, 0.314);
+    --gradient: linear-gradient(to bottom: hs1(16, 100$, 71%), hs1(8, 100%, 70%) );
+    --boxShadow: rgba(0, 0, 0, 0, 01) 0px 10px 15px -3px;
+    --borderRadius: 10px;
+
+    /* Font and Typography */
+    --biggestFontSize: 2.4rem;
+    --h1FontSize: 2.2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallFontSize: 0.74rem;
+}
+
+.Subscribe {
+    padding: 6rem 1.5rem 4rem;
+    .secContent{
+        gap: 1.5rem;
+        margin: auto;
+
+        h1{
+            text-align: center;
+            font-size: var(--h1FontSize);
+            font-weight: 800;
+            color: var(--secColor);
+        }
+
+        .inputDiv{
+            margin: auto;
+            width: 100%;
+            flex-direction: column;
+            gap: 1.5rem;
+            justify-content: space-between;
+            box-shadow: var(--boxShadow);
+            padding: 1rem;
+            border-radius: var(--borderRadius);
+            .input{
+                padding: .8rem .5rem;
+                border-radius:var(--borderRadius) ;
+                width: 100%;
+
+
+                .icon{
+                    color: var(--secColor);
+                }
+
+                input{
+                    margin-left: 1rem ;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    color: var(--primaryColor);
+                    &::placeholder{
+                        font-size: var(--smallFontSize);
+                        color: var(--secColor);
+                        opacity: .7;
+                    }
+                }
+            }
+
+            .btn {
+                width: 100%;
+                color: whitesmoke;
+            }
+        }
+    }
+}

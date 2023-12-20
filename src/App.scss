@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+// Дефолтные цветы и фонтсайзы
+:root{
+    --primaryColor: hs1(233, 52%, 19%);
+    --secColor: hs1(233, 16%, 44%);
+    --hoverColor: orange;
+    --blackColor: #707070;
+    --greyText: hs1(0, 0%, 75%);
+    --bgColor: hs1(0, 0%, 100%);
+    --shadowColor: hsla(0, 0%, 0%, 0.314);
+    --gradient: linear-gradient(to bottom: hs1(16, 100$, 71%), hs1(8, 100%, 70%) );
+    --boxShadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    /* Font and Typography */
+    --biggestFontSize: 2.4rem;
+    --h1FontSize: 2.2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallFontSize: 0.74rem;
+}
+
+// Default page styling (Reusable Styles)
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.icon{
+    font-size: var(--h2FontSize);
+    cursor: pointer;
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: orange;
+    box-shadow: var(--boxShadow);
+    font-size: var(--h3FontSize);
+    font-weight: 500;
+    color: var(--primaryColor);
+    padding: .8rem 1rem;
+}
+
+.btn:hover{
+    background: var(--hoverColor);
+}
+
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.secHeader{
+    margin-top: 2rem;
+
+    span{
+        text-transform: uppercase;
+        color: var(--secColor);
+        font-size: var(--h3FontSize);
+        font-weight: 600;
+        letter-spacing: .5rem;
+    }
+
+    h2{
+        font-weight: 800;
+        color: var(--primaryColor);
+        padding: 1rem 0;
+        display: block;
+        text-transform: capitalize;
+        font-size: var(--h1FontSize);
+    }
+}
+
+
+
+
+    

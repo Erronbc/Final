@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primaryColor: hs1(233, 52%, 19%);
+  --secColor: hs1(233, 16%, 44%);
+  --hoverColor: orange;
+  --blackColor: #707070;
+  --greyText: hs1(0, 0%, 75%);
+  --bgColor: hs1(0, 0%, 100%);
+  --shadowColor: hsla(0, 0%, 0%, 0.314);
+  --gradient: linear-gradient(to bottom: hs1(16, 100$, 71%), hs1(8, 100%, 70%) );
+  --boxShadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  /* Font and Typography */
+  --biggestFontSize: 2.4rem;
+  --h1FontSize: 2.2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallFontSize: 0.74rem;
+}
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 1000;
+  width: 100%;
+  padding: 1.5rem;
+  transition: 0.4s ease-in-out;
+}
+.NavBar .logoDiv .logo {
+  color: var(--primaryColor);
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+.NavBar .toggleIcon .icon, .NavBar .closeIcon .icon {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.NavBar .toggleIcon .icon:hover, .NavBar .closeIcon .icon:hover {
+  color: var(--hoverColor);
+}
+@media screen and (max-width: 768px) {
+  .NavBar .menu {
+    display: flex;
+    position: absolute;
+    background: orange;
+    padding: 1.5rem;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 1rem;
+    top: -50rem;
+    left: 50%;
+    right: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    box-shadow: var(--boxShadow);
+    transition: 0.4s ease-in-out;
+  }
+  .NavBar .menu .lists {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .NavBar .menu .lists li {
+    padding: 0.5rem 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    color: var(--blackColor);
+  }
+  .NavBar .menu .lists li:hover {
+    color: var(--primaryColor);
+    font-weight: 700;
+  }
+  .NavBar .menu .lists li a {
+    color: var(--primaryColor);
+    font-weight: 500;
+    font-size: var(--h3FontSize);
+  }
+  .NavBar .menu .lists li:hover {
+    border: 1.5px dashed var(--primaryColor);
+  }
+  .NavBar .menu .lists li:hover a {
+    font-weight: 600;
+  }
+  .NavBar .menu .btns {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .NavBar .menu .btns .btn {
+    width: 100%;
+  }
+  .NavBar .menu .btns .lang {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--primaryColor);
+  }
+  .NavBar .menu .closeIcon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    bottom: -20px;
+    border-radius: 50%;
+    background: var(--hoverColor);
+    padding: 5px;
+    right: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+  }
+  .NavBar .menu .closeIcon .icon {
+    color: var(--primaryColor);
+    cursor: pointer;
+  }
+}
+.NavBar .showMenu {
+  top: 7rem;
+}/*# sourceMappingURL=Header.css.map */

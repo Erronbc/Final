@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+// Дефолтные цветы и фонтсайзы
+:root{
+    --primaryColor: hs1(233, 52%, 19%);
+    --secColor: hs1(233, 16%, 44%);
+    --hoverColor: orange;
+    --blackColor: #707070;
+    --greyText: hs1(0, 0%, 75%);
+    --bgColor: hs1(0, 0%, 100%);
+    --shadowColor: hsla(0, 0%, 0%, 0.314);
+    --gradient: linear-gradient(to bottom: hs1(16, 100$, 71%), hs1(8, 100%, 70%) );
+    --boxShadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    /* Font and Typography */
+    --biggestFontSize: 2.4rem;
+    --h1FontSize: 2.2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallFontSize: 0.74rem;
+}
+
+.Home{
+    padding-top: 8rem;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+
+    .textDivgrid{
+        
+        .redText{
+            color: orange;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin: 10px 0px;
+        }
+
+        h2{
+            position: relative;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: rgb(50, 117, 212);
+            margin: 20px 0px;
+        }
+        p{
+            color: var(--secColor);
+            font-size: var(--h3FontSize);
+            line-height: 25px;
+            margin: 20px 0px;
+        }
+        .buttons{
+            gap: 1rem;
+            margin: 20px 0px;
+
+            .btn{
+                padding: 1rem;
+                font-size: 15px;
+            }
+
+            .playBtn{
+                gap: 0.5rem;
+                cursor: pointer;
+
+                .icon{
+                    justify-content: center;
+                    height: 40px;
+                    width: 40px;
+                    padding: 8px;
+                    border-radius: 50%;
+                    background: orange;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    .imgDiv {
+        width: 100%;
+        margin: auto;
+        img{
+            scale: 1;
+        }
+    }
+
+    .a{
+        position: absolute;
+        width: 27%;
+        top: -1rem;
+        right: 35%;
+    }
+}

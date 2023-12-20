@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+// Дефолтные цветы и фонтсайзы
+:root{
+    --primaryColor: hs1(233, 52%, 19%);
+    --secColor: hs1(233, 16%, 44%);
+    --hoverColor: orange;
+    --blackColor: #707070;
+    --greyText: hs1(0, 0%, 75%);
+    --bgColor: hs1(0, 0%, 100%);
+    --shadowColor: hsla(0, 0%, 0%, 0.314);
+    --gradient: linear-gradient(to bottom: hs1(16, 100$, 71%), hs1(8, 100%, 70%) );
+    --boxShadow: rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    /* Font and Typography */
+    --biggestFontSize: 2.4rem;
+    --h1FontSize: 2.2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallFontSize: 0.74rem;
+}
+
+.Footer {
+    padding: 4rem 1.5rem 1rem;
+    width: 100%;
+    border-radius: var(--borderRadius);
+    text-align: center;
+    background: orange;
+    margin: auto;
+
+    .secContainer{
+        align-items: flex-start;
+        .singleSection {
+            h2{
+                font-size: var(--biggestFontSize);
+                color: var(--bgColor);
+                padding-bottom: 1rem;
+                font-weight: 800;
+            }
+            h3{
+                color: var(--primaryColor);
+                font-weight: 700;
+                font-size: var(--h3FontSize);
+            }
+            p{
+                font-size: var(--smallFontSize);
+                color: var(--secColor);
+
+            }
+            li{
+                display: block;
+                padding-top: 1rem;
+                font-weight: 400;
+                color: var(--secColor);
+                cursor: pointer;
+                &:hover{
+                    transform: translateX(5px);
+                    font-weight: 500;
+                    transition: .4s ease-in-out;
+                    color: var(--primaryColor);   
+                }
+            }
+
+            .socials {
+                gap: .7rem;
+                padding: 1rem 0;
+                margin: auto;
+                justify-content: center;
+
+                .icon {
+                    font-style: 27px;
+                    color: var(--bgColor);
+                    &:hover {
+                        transform: translateY(-7px);
+                        transition: .4s ease-in-out;
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+            .text{
+                font-size: var(--h3FontSize);
+                display: block;
+                padding-bottom: 5px;
+                font-weight: 500;
+                color: var(--secColor);
+            }
+
+            .flex{
+                gap: .5rem;
+                margin: auto;
+                cursor: pointer;
+            }
+        }
+    }
+}

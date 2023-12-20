@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primaryColor: hs1(233, 52%, 19%);
+  --secColor: hs1(233, 16%, 44%);
+  --hoverColor: orange;
+  --blackColor: #707070;
+  --greyText: hs1(0, 0%, 75%);
+  --bgColor: hs1(0, 0%, 100%);
+  --shadowColor: hsla(0, 0%, 0%, 0.314);
+  --gradient: linear-gradient(to bottom: hs1(16, 100$, 71%), hs1(8, 100%, 70%) );
+  --boxShadow: rgba(0, 0, 0, 0, 01) 0px 10px 15px -3px;
+  --borderRadius: 10px;
+  /* Font and Typography */
+  --biggestFontSize: 2.4rem;
+  --h1FontSize: 2.2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallFontSize: 0.74rem;
+}
+
+.Categories .secHeader {
+  text-align: center;
+}
+.Categories .secContainer {
+  gap: 1rem;
+}
+.Categories .secContainer .singleCard {
+  text-align: center;
+  padding: 2rem;
+  border-radius: var(--borderRadius);
+  gap: 1rem;
+  height: 100%;
+}
+.Categories .secContainer .singleCard .imgDiv {
+  position: relative;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+.Categories .secContainer .singleCard .imgDiv .mainImage {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.Categories .secContainer .singleCard .imgDiv .design {
+  position: absolute;
+  width: 60px;
+  right: 40%;
+  left: 60%;
+  top: -10px;
+  z-index: -1;
+  transform: translate(-50%);
+}
+.Categories .secContainer .singleCard span {
+  font-size: var(--h2FontSize);
+  font-weight: 600;
+  color: rgb(50, 117, 212);
+}
+.Categories .secContainer .singleCard p {
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+  color: var(--secColor);
+  line-height: 23px;
+  font-size: var(--h3FontSize);
+}
+.Categories .secContainer .singleCard:hover {
+  box-shadow: var(--boxShadow);
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=Categories.css.map */
