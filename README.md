@@ -1,5 +1,5 @@
 # Yuniyev Khazbulat IT2-2104
-#ATTENTION# My final project is designed as a Mobile Web App, not adapted for large screens, view it in 320 px ideally
+#ATTENTION# My final project is designed as a Mobile Web App, not adapted for large screens, view it in 320 px ideally (inspect code > responsive)
 
 -npm run dev
 
